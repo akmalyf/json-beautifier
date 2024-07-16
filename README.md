@@ -37,10 +37,6 @@ We welcome contributions from the community! Here's how you can get involved:
 
 Please make sure your code adheres to our coding standards and includes tests where applicable.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Thanks to all the contributors who have helped make this project better.
