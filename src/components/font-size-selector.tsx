@@ -29,7 +29,7 @@ export function FontSizeSelector({ value, onChange }: FontSizeSelectorProps) {
         step={1}
         onValueChange={onChange}
         className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
-        aria-label="font-size"
+        aria-label="Font Size Selector"
       />
     </div>
   );

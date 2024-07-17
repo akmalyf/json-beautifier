@@ -51,6 +51,7 @@ export default function Page() {
                 variant="primary"
                 size="lg"
                 className="justify-between px-4"
+                aria-label="Submit Beautify"
               >
                 <span>Beautify ✨</span>
                 <ArrowRightIcon className="size-3" />

@@ -34,12 +34,14 @@ export function OutputArea({ fontSize, value, error }: OutputAreaProps) {
                 placeholder="Here is your beautiful JSON."
                 className={`${error ? "text-red-500" : ""}  bg-muted dark:bg-muted h-full min-h-[300px] md:min-h-[400px] lg:min-h-[700px] ${fontFira.variable}`}
                 value={value}
+                aria-label="Output JSON"
             />
             <Button
                 variant="secondary"
                 size="icon"
                 className="absolute right-1 top-1 hover:bg-white dark:hover:bg-zinc-950"
                 onClick={handleCopyClipboard}
+                aria-label="Copy Json"
             >
                 {isCopying ? (
                     <CheckIcon className="h-5 w-5 text-black dark:text-white" />

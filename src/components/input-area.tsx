@@ -16,6 +16,7 @@ export function InputArea({ fontSize, value, onChange }: InputAreaProps) {
             className={`h-full min-h-[300px] md:min-h-[400px] lg:min-h-[700px] ${fontFira.variable}`}
             value={value}
             onChange={onChange}
+            aria-label="Input Json"
         />
     )
 }

@@ -15,22 +15,20 @@ export function TabWidthSelector({ space, onSelect }: TabWidthProps) {
   return (
     <div className="grid gap-2">
       <Label htmlFor="tab-width">Tab Width</Label>
-      <div id="tab-width" aria-label="tab-width">
-        <Select onValueChange={onSelect}>
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="2 Space" />
-          </SelectTrigger>
-          <SelectContent>
-            {space.map((item, index) => {
-              return (
-                <SelectItem key={index.toString()} value={item.tab.toString()}>
-                  {item.title}
-                </SelectItem>
-              );
-            })}
-          </SelectContent>
-        </Select>
-      </div>
+      <Select onValueChange={onSelect}>
+        <SelectTrigger className="w-full" id="tab-width" aria-label="Tab Width Selector">
+          <SelectValue placeholder="2 Space" />
+        </SelectTrigger>
+        <SelectContent>
+          {space.map((item, index) => {
+            return (
+              <SelectItem key={index.toString()} value={item.tab.toString()}>
+                {item.title}
+              </SelectItem>
+            );
+          })}
+        </SelectContent>
+      </Select>
     </div>
   );
 }
